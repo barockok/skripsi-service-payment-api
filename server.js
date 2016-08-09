@@ -1,6 +1,6 @@
 import express     from "express"
 import bodyParser  from "body-parser"
-import ServiceCharge from "./lib/services/charge"
+import ServiceCharge from "./lib/services/charge_service"
 
 const app = express();
 const port = process.env.PORT || 3001
