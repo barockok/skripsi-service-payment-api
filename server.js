@@ -8,7 +8,12 @@ const port = process.env.PORT || 3001
 app.use(bodyParser.json());
 
 app.post('/api/v1/charge', (req, res)=>{
-  ServiceCharge(req.body, (error, response) => res.send(response))
+  ServiceCharge(req.body, (error, response) => {
+    if(error)
+      return res.send({status: 'error'}).status(400);
+
+    res.send({status: 'success', transaction: response})
+  })
 })
 
 app.get('/ping', (req, res)=>{
