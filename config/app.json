@@ -1,0 +1,4 @@
+{
+  "merchant_service_url" : "http://localhost:3000",
+  "notification_service_url" : "http://localhost:3000"
+}
