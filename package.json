@@ -15,6 +15,7 @@
     "request": "^2.74.0",
     "sequelize": "^3.23.6",
     "sequelize-cli": "^2.4.0",
+    "thrift": "^0.9.3",
     "uuid-js": "^0.7.5"
   },
   "devDependencies": {

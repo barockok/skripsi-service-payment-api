@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.post('/api/v1/charge', (req, res)=>{
   ServiceCharge(req.body, (error, response) => {
     if(error){
-      consol.log(error)
+      console.log(error)
       return res.send({status: 'error'}).status(400);
     }
 
