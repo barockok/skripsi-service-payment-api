@@ -1,8 +1,8 @@
 {
   "merchant_service_url" : "http://localhost:3000",
-  "notification_service_url" : "http://localhost:3000",
+  "notification_service_url" : "http://localhost:9093",
 
-  "communication_protocol" : "thrift",
+  "communication_protocol" : "http",
   "merchant_service_thrift_host" : "localhost",
   "notification_service_thrift_host" : "localhost",
   "merchant_service_thrift_port" : 9090,
