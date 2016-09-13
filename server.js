@@ -13,10 +13,10 @@ app.post('/api/v1/charge', (req, res)=>{
   ServiceCharge(req.body, (error, response) => {
     if(error){
       console.log(error)
-      return res.send({status: 'error'}).status(400);
+      res.status(400).send({status: 'error'})
+    }else{
+      res.send({status: 'success', transaction: response})
     }
-
-    res.send({status: 'success', transaction: response})
   })
 })
 
