@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev:start": "nodemon server.js --exec babel-node"
+    "dev:start": "nodemon src/server.js --exec babel-node",
+    "build" : "babel src -d dist",
+    "start" : "node ./dist/server.js"
   },
   "author": "barock <zidmubarock@gmail.com>",
   "license": "ISC",
